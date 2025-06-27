@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.5-dist/bootstrap-5.3.5-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.scss">
+</head>
+<body>
+<header class="container">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img/image_2025-06-17_08-11-15.png" alt="">
+
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse offset-4" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Biz haqimizda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Xizmatlar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Mijozlar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Jamoa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Kontakt</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                            Uzbek
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<section class="container">
+    <div class="row">
+        <div class="col-5 mx-1">
+            <h2>Nega mijozlar bizni tanlashadi?</h2>
+            <h2>So‘ngi texnologiyalar sifati,</h2>
+            <h1>hoziroq buyurtma bering!</h1>
+            <div class="test">
+                <h6 class="mt-5 mx-5">Buyurtma berish→</h6>
+            </div>
+        </div>
+        <div class="col-4 offset-2 mt-5">
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0"
+                            class="active d-block jj"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1" class="jj"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2" class="jj"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="data:image/jpeg;base64,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" alt="Los Angeles" class="w-75">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="data:image/jpeg;base64,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" alt="Los Angeles" class="w-75">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="data:image/jpeg;base64,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" alt="Los Angeles" class="w-75">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5 py-4">
+        <div class="row ">
+            <div class="col-2 col-md-4 mb-3">
+                <div>
+                    <span class="phone-icon"><img src="img/image_2025-06-17_09-28-12.png" alt=""></span>
+                    <span>(+99891)</span>
+                    <div class="phone-number">360-77-00</div>
+                </div>
+            </div>
+            <div class="col-2 col-md-4 mb-3">
+                <div>
+                    <span class="phone-icon"><img src="img/image_2025-06-17_09-28-12.png" alt=""></span>
+                    <span>(+99891)</span>
+                    <div class="phone-number">204-11-00</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container py-5 bts">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h2><strong>«EUROPRINT»</strong><br>tipografiyasi haqida</h2>
+                <p>
+                    "EUROPRINT" o'zbek bosmaxonasi – bu sizning biznesingizga yuqori darajadagi professional yondashuv.
+                    Bosma mahsulotlarning ahamiyatini ortiqcha baholash qiyin. Axir, sizning kompaniyangizning imidji
+                    bunga bog'liq.
+                    Biz, o'zbek matbaa ijodiy uyi, Sizga eng yuqori darajadagi bosma dizayn va ishlab chiqarishni
+                    rivojlantirish bo‘yicha xizmatlarni ko‘rsatishga tayyormiz.
+                    Bizning ishimizda sifat, samaradorlik va mijozning vazifalariga individual yondoshuvni
+                    muvaffaqiyatli birlashtiramiz.
+                </p>
+                <p><strong>"EUROPRINT" bosmaxonasi:</strong></p>
+                <div class="feature-item">
+                    <i class="bi bi-caret-right-fill highlight-icon"></i> <strong>
+                    <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0C4.41828 0 8 3.58172 8 8V12H0V0Z" fill="#F26522"/>
+                    </svg>
+                    Katta tajriba</strong>
+                </div>
+                <div class="feature-item">
+                    <i class="bi bi-caret-right-fill highlight-icon"></i> <strong>
+                    <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0C4.41828 0 8 3.58172 8 8V12H0V0Z" fill="#F26522"/>
+                    </svg>
+                    Eng yangi uskunalar</strong>
+                </div>
+                <div class="feature-item">
+                    <i class="bi bi-caret-right-fill highlight-icon"></i> <strong>
+                    <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0C4.41828 0 8 3.58172 8 8V12H0V0Z" fill="#F26522"/>
+                    </svg>
+                    Keng doiradagi xizmatlar</strong>
+                </div>
+                <div class="feature-item">
+                    <i class="bi bi-caret-right-fill highlight-icon"></i> <strong>
+                    <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0C4.41828 0 8 3.58172 8 8V12H0V0Z" fill="#F26522"/>
+                    </svg>
+                    Buyurtmaning eng tezkor bajarilishi</strong>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center mt-4 mt-lg-0">
+                <img class="logo-img w-75 h-25" src="img/image_2025-06-17_09-42-50.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container py-5 bg-dark text-white  mt-5">
+        <h2 class="text-center mb-5">Nima uchun biz?</h2>
+        <div class="row g-4">
+
+            <div class="col-md-6 col-lg-4">
+                <div class="icon-box bg-white text-dark">
+                    <div class="icon">⏱️</div>
+                    <h5>Samaradorlik</h5>
+                    <p>Har qanday murakkablikdagi buyurtmalarni tezkor hisoblash. Ofset usulida ishlash 24 soat davom
+                        etadi.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="icon-box bg-white text-dark">
+                    <div class="icon">💎</div>
+                    <h5>100% sifat</h5>
+                    <p>Eng yangi uskunalar, sifatli materiallar, professional xodimlar.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="icon-box bg-white text-dark">
+                    <div class="icon">💰</div>
+                    <h5>Qulay narx</h5>
+                    <p>Xarajatlarni minimallashtirish bizga bozor narxidan past narxlarda raqobatdosh ustunlikni
+                        beradi.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-6">
+                <div class="icon-box bg-white text-dark">
+                    <div class="icon">🛠️</div>
+                    <h5>Zamonaviy uskunalar</h5>
+                    <p>Bizning bosmaxona zamonaviy poligrafiya uskunalari bilan jihozlangan ishlab chiqarish
+                        ustaxonasiga asoslanadi.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-6">
+                <div class="icon-box bg-white text-dark">
+                    <div class="icon">💡</div>
+                    <h5>Dizayn ofisi va dizayn studiyasi</h5>
+                    <p>Ular bizga g‘oyalar bosqichida buyurtma olishga va har qanday g‘oyani tayyor mahsulotga
+                        aylantirishga imkon beradi.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container py-5">
+        <h2 class="text-center mb-4">Bizning xizmatlar</h2>
+        <div class="row g-4">
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="service-item">
+                    <img src="img/image_2025-06-17_12-23-44.png" alt="Gofra karobka">
+                    <div class="overlay">
+                        <p>Gofra karobka</p>
+                        <button class="btn-custom">Buyurtma berish</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="service-item">
+                    <img src="img/image_2025-06-17_12-24-19.png">
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="service-item">
+                    <img src="img/image_2025-06-17_12-24-32.png">
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="service-item">
+                    <img src="img/image_2025-06-17_12-24-44.png">
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="service-item">
+                    <img src="img/image_2025-06-17_12-24-56.png">
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="service-item">
+                    <img src="img/image_2025-06-17_12-25-09.png">
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="service-item">
+                    <img src="img/image_2025-06-17_12-25-19.png">
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="service-item">
+                    <img src="img/image_2025-06-17_12-25-28.png">
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="service-item">
+                    <img src="img/image_2025-06-17_12-25-38.png">
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="service-item">
+                    <img src="img/image_2025-06-17_12-26-19.png">
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="service-item">
+                    <img src="img/image_2025-06-17_12-26-48.png">
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="service-item">
+                    <img src="img/image_2025-06-17_12-26-32.png">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <section class="portfolio-slide">
+        <div class="container">
+            <div id="portfolioCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <h2 class="fw-bold">Portfolio</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor viverra quisque orci
+                                    cursus curabitur auctor ut sit. Purus proin eget enim arcu aliquam. Dictumst aliquet
+                                    aliquam pretium facilisis sed at cras varius. Erat vivamus mi sociis pharetra
+                                    faucibus nisl enim.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="portfolio-img">
+                                    <img src="img/image_2025-06-17_12-45-21.png" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <h2 class="fw-bold">Portfolio</h2>
+                                <p>Ikkinchi portfolio loyihamiz. Bu yerda mijoz uchun maxsus qadoqlash yechimlari ishlab
+                                    chiqildi. Har bir element yuqori sifatli materiallar bilan tayyorlangan.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="portfolio-img">
+                                    <img src="img/image_2025-06-17_12-45-21.png" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel"
+                        data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel"
+                        data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <div class="container my-5">
+        <h2 class="fw-bold mb-4">Bizning yutuqlarimiz</h2>
+        <div class="stats-box">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <div class="stat-number">628+</div>
+                    <div class="stat-text">Bizning mijozlarimiz soni</div>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <div class="stat-number">1500+</div>
+                    <div class="stat-text">Bajarilgan buyurtmalar soni</div>
+                </div>
+                <div class="col-md-4">
+                    <div class="stat-number">254+</div>
+                    <div class="stat-text">Bizning mutaxassislarimiz</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container text-center my-5">
+        <h2 class="fw-bold mb-4">Bizning mijozlar</h2>
+        <div class="slider-container">
+            <div class="slider-track">
+                <div class="slide"><img src="img/image_2025-06-18_16-35-17.png" alt=""></div>
+                <div class="slide"><img src="img/image_2025-06-18_16-35-34.png" alt=""></div>
+                <div class="slide"><img src="img/image_2025-06-18_16-35-44.png" alt=""></div>
+                <div class="slide"><img src="img/image_2025-06-18_16-36-14.png" alt=""></div>
+                <div class="slide"><img src="img/image_2025-06-18_16-36-24.png" alt=""></div>
+                <div class="slide"><img src="img/image_2025-06-18_16-36-45.png" alt=""></div>
+                <div class="slide"><img src="img/image_2025-06-18_16-37-04.png" alt=""></div>
+                <div class="slide"><img src="img/image_2025-06-18_16-48-40.png" alt=""></div>
+                <div class="slide"><img src="img/image_2025-06-18_16-49-02.png" alt=""></div>
+                <div class="slide"><img src="img/image_2025-06-18_16-49-14.png" alt=""></div>
+                <div class="slide"><img src="img/image_2025-06-18_16-49-26.png" alt=""></div>
+                <div class="slide"><img src="img/image_2025-06-18_16-36-24.png" alt=""></div>
+            </div>
+        </div>
+        <div class="slider-container">
+            <div class="slider-track">
+                <div class="slide"><img src="img/image_2025-06-18_16-36-14.png" alt=""></div>
+                <div class="slide"><img src="img/image_2025-06-18_16-36-45.png" alt=""></div>
+                <div class="slide"><img src="img/image_2025-06-18_16-37-04.png" alt=""></div>
+                <div class="slide"><img src="img/image_2025-06-18_16-49-02.png" alt=""></div>
+                <div class="slide"><img src="img/image_2025-06-18_16-48-40.png" alt=""></div>
+                <div class="slide"><img src="img/image_2025-06-18_16-35-17.png" alt=""></div>
+                <div class="slide"><img src="img/image_2025-06-18_16-35-34.png" alt=""></div>
+                <div class="slide"><img src="img/image_2025-06-18_16-49-14.png" alt=""></div>
+                <div class="slide"><img src="img/image_2025-06-18_16-49-26.png" alt=""></div>
+                <div class="slide"><img src="img/image_2025-06-18_16-36-24.png" alt=""></div>
+                <div class="slide"><img src="img/image_2025-06-18_16-35-44.png" alt=""></div>
+                <div class="slide"><img src="img/image_2025-06-18_16-36-24.png" alt=""></div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="container">
+        <div class="col-12">
+            <div id="#demo"  class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="card">
+                                    <div class="card-body p-2 text-center">
+                                        <div>
+                                            <img class="w-50 mx-auto" src="img/image_2025-06-18_18-43-45.png" alt="">
+                                        </div>
+                                        <div class="mt-5">
+                                            <h3>Brandon Richards</h3>
+                                            <p class="text-danger">Fotograf bosh dizayner</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card">
+                                    <div class="card-body p-2 text-center">
+                                        <div>
+                                            <img class="w-50 mx-auto" src="img/image_2025-06-18_18-43-45.png" alt="">
+                                        </div>
+                                        <div class="mt-5">
+                                            <h3>Brandon Richards</h3>
+                                            <p class="text-danger">Fotograf bosh dizayner</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card">
+                                    <div class="card-body p-2 text-center">
+                                        <div>
+                                            <img class="w-50 mx-auto" src="img/image_2025-06-18_18-43-45.png" alt="">
+                                        </div>
+                                        <div class="mt-5">
+                                            <h3>Brandon Richards</h3>
+                                            <p class="text-danger">Fotograf bosh dizayner</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="card">
+                                    <div class="card-body p-2 text-center">
+                                        <div>
+                                            <img class="w-50 mx-auto" src="img/image_2025-06-18_18-43-45.png" alt="">
+                                        </div>
+                                        <div class="mt-5">
+                                            <h3>Brandon Richards</h3>
+                                            <p class="text-danger">Fotograf bosh dizayner</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card">
+                                    <div class="card-body p-2 text-center">
+                                        <div>
+                                            <img class="w-50 mx-auto" src="img/image_2025-06-18_18-43-45.png" alt="">
+                                        </div>
+                                        <div class="mt-5">
+                                            <h3>Brandon Richards</h3>
+                                            <p class="text-danger">Fotograf bosh dizayner</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card">
+                                    <div class="card-body p-2 text-center">
+                                        <div>
+                                            <img class="w-50 mx-auto" src="img/image_2025-06-18_18-43-45.png" alt="">
+                                        </div>
+                                        <div class="mt-5">
+                                            <h3>Brandon Richards</h3>
+                                            <p class="text-danger">Fotograf bosh dizayner</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="card">
+                                    <div class="card-body p-2 text-center">
+                                        <div>
+                                            <img class="w-50 mx-auto" src="img/image_2025-06-18_18-43-45.png" alt="">
+                                        </div>
+                                        <div class="mt-5">
+                                            <h3>Brandon Richards</h3>
+                                            <p class="text-danger">Fotograf bosh dizayner</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card">
+                                    <div class="card-body p-2 text-center">
+                                        <div>
+                                            <img class="w-50 mx-auto" src="img/image_2025-06-18_18-43-45.png" alt="">
+                                        </div>
+                                        <div class="mt-5">
+                                            <h3>Brandon Richards</h3>
+                                            <p class="text-danger">Fotograf bosh dizayner</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card">
+                                    <div class="card-body p-2 text-center">
+                                        <div>
+                                            <img class="w-50 mx-auto" src="img/image_2025-06-18_18-43-45.png" alt="">
+                                        </div>
+                                        <div class="mt-5">
+                                            <h3>Brandon Richards</h3>
+                                            <p class="text-danger">Fotograf bosh dizayner</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-7">
+                <img class="w-100 h-75" src="img/image_2025-06-18_19-53-39.png" alt="">
+            </div>
+
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-white">
+        <div class="row">
+             <div class="col-2 offset-1 mt-5">
+                 <h5>Kompaniya</h5>
+                 <p class="mt-4 text-secondary">Biz haqimizda</p>
+                  <p class="text-secondary">Mahsulotlar</p>
+                  <p class="text-secondary">Xizmatlar</p>
+                  <p class="text-secondary">Bizning mijozlar</p>
+                  <p class="text-secondary">Jamoa</p>
+             </div>
+            <div class="col-2 mt-5">
+                <h5>Xizmatlar</h5>
+                <p class="mt-4 text-secondary">Ofset bosma</p>
+                <p class="text-secondary">Ipakli bosma</p>
+                <p class="text-secondary">Kesish</p>
+                <p class="text-secondary">Ultra-binafsha rang</p>
+                <p class="text-secondary">Bo’rttirish</p>
+                <p class="text-secondary">Laminatsiya</p>
+                <p class="text-secondary">Qog’oz kashirovka</p>
+                <p class="text-secondary">O’yib olish</p>
+            </div>
+            <div class="col-2 mt-5">
+                <h5>Mijozlar uchun</h5>
+                <p class="mt-4 text-secondary">Mijozlar uchun</p>
+                <p class="text-secondary">Rahbariyat</p>
+                <p class="text-secondary">Tarix</p>
+                <p class="text-secondary">Yangiliklar</p>
+                <p class="text-secondary">Maketlar uchun talab</p>
+                <p class="text-secondary">Aloqa</p>
+            </div>
+           <div class="col-2 mt-5 offset-2">
+               <h3 class="mx-4">Aloqa</h3>
+               <p class="mt-5"><img src="img/image_2025-06-21_06-49-55.png" alt="">(+99891)</p>
+               <h3 class="mx-4">360-77-00</h3>
+               <p class="mx-4 mt-2">(+99891)</p>
+               <h3 class="mx-4">204-11-00</h3>
+               <p class="mx-4 mt-2">(+99891)</p>
+               <h3 class="mx-4">543-55-55</h3>
+           </div>
+        </div>
+        <div class="row">
+            <div class="col-6 offset-1">
+                <div class="dropdown">
+                    <button type="button" class="btn btn-light  dropdown-toggle" data-bs-toggle="dropdown">
+                        Uzbek
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Link 1</a></li>
+                        <li><a class="dropdown-item" href="#">Link 2</a></li>
+                        <li><a class="dropdown-item" href="#">Link 3</a></li>
+                        <li><a class="dropdown-item-text" href="#">Text Link</a></li>
+                        <li><span class="dropdown-item-text">Just Text</span></li>
+                    </ul>
+                </div>
+                <p class="mt-5">© 2005 - 2019  europrint.uz tipografiyasi   |  Personal Development Process</p>
+            </div>
+            <div class="col-3 offset-2">
+                <p><img src="img/image_2025-06-21_07-14-01.png" alt="">140100.
+                    O'zbekiston R,  Farg'ona viloyati,
+                    Qo'qon sh. Usta bozor k, 1B uy.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="../bootstrap-5.3.5-dist/bootstrap-5.3.5-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
